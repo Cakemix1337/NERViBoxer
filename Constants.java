@@ -22,13 +22,13 @@ public class Constants {
 	
 	
 	//GUI
-	public static int chosenSpamMessage = 1;
-	public static int userChosenAmount = 500000;
-	public static int multiply = 2;
-	public static int spamSpeedX = 1000;
-	public static int spamSpeedY = 3000;
+	public static int chosenSpamMessage;
+	public static int userChosenAmount;
+	public static int multiply;
+	public static int spamSpeedX;
+	public static int spamSpeedY;
 
-	
+	public static boolean guiChecked = false;
 	
 	public static int startMoney = 0;
 	public static int amount_to_stake;

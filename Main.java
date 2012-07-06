@@ -40,8 +40,8 @@ public class Main extends ActiveScript implements PaintListener {
 
 	@Override
 	protected void setup() {
-		// GUI g = new GUI();
-		// g.setVisible(true);
+			DuelArenaGUI g = new DuelArenaGUI();
+		 g.setVisible(true);
 
 		startTime = System.currentTimeMillis();
 		provide(new alwaysActive());
