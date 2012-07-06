@@ -10,7 +10,6 @@ import javax.swing.border.TitledBorder;
  * Created by JFormDesigner on Wed Jul 04 02:53:55 EEST 2012
  */
 import static NERVEDuelArena.Constants.*;
-import ClueScrollPackage.ID;
 
 
 

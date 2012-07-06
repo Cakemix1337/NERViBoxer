@@ -20,8 +20,6 @@ import org.powerbot.game.api.methods.input.Keyboard;
 import org.powerbot.game.api.methods.tab.Skills;
 import org.powerbot.game.bot.event.listener.PaintListener;
 
-import ClueScrollPackage.GUI;
-
 import static NERVEDuelArena.Strategies.setScriptActions.*;
 import static NERVEDuelArena.API.DuelFirstScreenAPI.*;
 import static NERVEDuelArena.Constants.*;
