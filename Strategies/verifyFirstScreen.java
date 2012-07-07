@@ -27,18 +27,15 @@ public class verifyFirstScreen {
 
 		}
 		
-		if(triedPrevious == false){
+		if(!triedPrevious){
 			System.out.println("Trying previous");
 
 			setPreviousOptions();
 			triedPrevious = true;
 		}
 		// quickchat Closer
-		if(Widgets.get(137,4).isOnScreen() && !isInOneOfAreas()){
+		if(Widgets.get(137,4).isOnScreen() && !isInOneOfAreas())
 			Widgets.get(137,4).click(true);
-		}
-		
-		
 		
 		//--//--//--//--//--//--//--//--//--//
 		
@@ -76,12 +73,13 @@ public class verifyFirstScreen {
 			}
 				
 			}
-			if(!checkEquipment()){
+			
+			if(!checkEquipment())
 				setEquipment();
-			}
-			if(!checkOptions()){
+			
+			if(!checkOptions())
 				setOptions();
-			}
+			
 			
 				
 			if(getMyStake() == amount_to_add() &&
