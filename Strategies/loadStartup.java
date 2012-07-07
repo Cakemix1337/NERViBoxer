@@ -22,20 +22,22 @@ public class loadStartup {
 		}
 		
 		Widgets.get(548, MONEY_POUCH).click(false);
+		
 		if (Menu.isOpen()) {
-			Menu.select("Examine money pouch");
-			Time.sleep(Random.nextInt(300,1500));
+			if(Menu.select("Examine money pouch"))
+				Time.sleep(Random.nextInt(300,1500));
 		}
 
 		if (!checkChatOptions()) {
 			setChatOptions();
 			setAllTab();
 		}
+		
 		if (startMoney == 0) {
 			checkPouchAmount();
 			startMoney = pouchAmount();
-
 		}
+		
 		if (startMoney < userChosenAmount) {
 			System.out.println("Out of money");
 			context.stop();
