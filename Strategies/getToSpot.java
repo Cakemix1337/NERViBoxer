@@ -22,19 +22,19 @@ public class getToSpot {
 						.contains("Well done! You have defeated")) {
 				
 			if(checkedWin == false){
-				winInARowz += 1;
-				if(winInARowz > wonInARowRECORD){
+				winInARowz++;
+				if(winInARowz > wonInARowRECORD)
 					wonInARowRECORD = winInARowz;
-				}
-			
+				
 				// profit
 				amount_we_have_won += amount_to_add();
+				
 				lostInARowz = 0;
 				
 				lastFight = "Win";
 				
 				// paint
-				times_won += 1;
+				times_won++;
 				
 				checkedWin = true;	
 			}
@@ -47,16 +47,13 @@ public class getToSpot {
 				// profit
 				amount_we_have_lost += amount_to_add();		
 				lastFight = "Lost";
-				lostInARowz += 1;
+				lostInARowz++;
 				winInARowz = 0;
-				if(lostInARowz > lostInARowRECORD){
+				if(lostInARowz > lostInARowRECORD)
 					lostInARowRECORD = lostInARowz;
-				}
-			
-				
+					
 				// paint
-				times_lost += 1;
-				
+				times_lost++;
 				
 				checkedLost = true;
 				
@@ -65,17 +62,17 @@ public class getToSpot {
 		}
 
 		if (amount_to_add() <= 400000) {
-			if (!Players.getLocal().isMoving() && !isInDuelArenaSpot()) {
+			if (!Players.getLocal().isMoving() && !isInDuelArenaSpot()) 
 				Walking.walk(duelArenaTile1);
-			}
+			
 		} else if (amount_to_add() >= 400000 && amount_to_add() <= 10000000) {
-			if (!Players.getLocal().isMoving() && !isInDuelArenaSpot()) {
+			if (!Players.getLocal().isMoving() && !isInDuelArenaSpot()) 
 				Walking.walk(duelArenaTile2);
-			}
+			
 		} else if (amount_to_add() >= 10000000) {
-			if (!Players.getLocal().isMoving() && !isInDuelArenaSpot()) {
+			if (!Players.getLocal().isMoving() && !isInDuelArenaSpot()) 
 				Walking.walk(duelArenaTile3);
-			}
+			
 
 		}
 
